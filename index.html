@@ -16,9 +16,9 @@
     <section id="top">
       <!-- Search Bar and User Signin/Signup -->
       <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
+        <div class="navbar-container container-fluid">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler hamburger-menu"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -28,25 +28,35 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="disappear-small d-sm-none" href="#">
+          <a class="d-sm-none" href="#">
             <img src="assets/logo.png" alt="logo" width="150" />
           </a>
-          <form class="d-none d-sm-flex" role="search">
+          <!-- </div> -->
+          <div>
+            <form class="d-none d-sm-flex" role="search">
+              <input
+                class="form-control search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <ul class="nav justify-content-end">
+            <button class="button">Sign in</button>
+            <span style="color: lightgray">|</span>
+            <button class="button">Sign up</button>
+          </ul>
+        </div>
+        <div class="searchbar">
+          <form class="d-sm-none" role="search">
             <input
-              class="form-control me-2"
+              class="form-control search"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
           </form>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign up</a>
-            </li>
-          </ul>
         </div>
       </nav>
 
@@ -60,26 +70,20 @@
 
       <!-- Nav Bar -->
 
-      <div class="container-fluid mb-3">
-        <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-sm p-0 p-sm-2">
           <div
-            class="collapse justify-content-center navbar-collapse"
+            class="collapse justify-content-center navbar-collapse dark-bg"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav fw-bold">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#menus">Menus</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Team</a>
-              <a class="nav-link" href="#">Contact</a>
-              <form class="d-flex d-sm-none" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </form>
+            <div class="fs-5 navbar-nav fw-bold">
+              <a class="m-2 color-hover nav-link" aria-current="page" href="#"
+                >Home</a
+              >
+              <a class="m-2 color-hover nav-link" href="#menus">Menus</a>
+              <a class="m-2 color-hover nav-link" href="#">About</a>
+              <a class="m-2 color-hover nav-link" href="#">Team</a>
+              <a class="m-2 color-hover nav-link" href="#">Contact</a>
             </div>
           </div>
         </nav>
@@ -97,7 +101,7 @@
               alt="..."
             />
             <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image">
+              <div class="text-over-image colored-hover">
                 <h3>SALAD</h3>
               </div>
             </div>
@@ -111,7 +115,7 @@
               alt="..."
             />
             <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image">
+              <div class="text-over-image colored-hover">
                 <h3>TACOS</h3>
               </div>
             </div>
@@ -125,7 +129,7 @@
               alt="..."
             />
             <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image">
+              <div class="text-over-image colored-hover">
                 <h3>NOODLES</h3>
               </div>
             </div>
@@ -139,7 +143,7 @@
               alt="..."
             />
             <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image">
+              <div class="text-over-image colored-hover">
                 <h3>BURGER</h3>
               </div>
             </div>
@@ -153,7 +157,7 @@
               alt="..."
             />
             <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image">
+              <div class="text-over-image colored-hover">
                 <h3>SALMON</h3>
               </div>
             </div>
@@ -167,7 +171,7 @@
       <div class="container-fluid mt-4">
         <div class="row p-3 cont">
           <div class="child-1 col-sm-12 col-md-8 col-lg-9">
-            <h4 class="mb-4">Newly Added Pizzas</h4>
+            <h4 class="heading mb-4">Newly Added Pizzas</h4>
             <div class="custom-row container-mobile">
               <div class="col-sm-3 col-md-3 col-lg-2">
                 <img
@@ -177,14 +181,14 @@
                 />
               </div>
               <div class="col-sm-9 col-lg-10">
-                <h5>Best Oven Taco Pizza</h5>
+                <h5 class="heading">Best Oven Taco Pizza</h5>
                 <p>
                   This really is the best taco pizza...ever. It's topped with
                   refried beans, cheese, romaine, crumbled tortilla chips, and
                   the icing on the cake, er pie — homemade ranch. In a word:
                   WOW.
                 </p>
-                <a href="">Continue Reading —></a>
+                <a href="">Continue Reading ⟶</a>
               </div>
             </div>
             <hr />
@@ -198,14 +202,14 @@
                 />
               </div>
               <div class="col-sm-9 col-lg-10">
-                <h5>Perfect Pan Pizza</h5>
+                <h5 class="heading">Perfect Pan Pizza</h5>
                 <p>
                   Calling all lovers of thick, pillowy pizza crust! This epic
                   homemade pan pizza tastes just like the thick crust pizza from
                   your favorite pizzeria. The smell wafting from the oven is
                   enough to make you visibly drool.
                 </p>
-                <a href="">Continue Reading —></a>
+                <a href="">Continue Reading ⟶</a>
               </div>
             </div>
             <hr />
@@ -218,19 +222,19 @@
                 />
               </div>
               <div class="col-sm-9 col-lg-10">
-                <h5>Best Mexican Pizza</h5>
+                <h5 class="heading">Best Mexican Pizza</h5>
                 <p>
                   Mexican pizza is the perfect recipe for when you can’t decide
                   between Italian and Mexican! This pizza recipe features a
                   sauce of creamy refried beans, Monterrey jack cheese, spicy
                   jalapeños and red onion, and sweet corn.
                 </p>
-                <a href="">Continue Reading —></a>
+                <a href="">Continue Reading ⟶</a>
               </div>
             </div>
           </div>
           <div class="child-2 col-sm-12 col-md-4 col-lg-3">
-            <h3 class="quick-search">Quick Search</h3>
+            <h4 class="heading quick-search">Quick Search</h4>
             <div class="mb-4 position-relative">
               <img
                 src="https://foodland.ca/wp-content/uploads/2020/12/Recipe_Eggs_SunnySide_Up_A.jpg"

@@ -2,12 +2,45 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: gray;
+}
+
+.hamburger-menu {
+  border: 0;
+}
+
+.hamburger-menu:focus {
+  box-shadow: none;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+input::placeholder {
+  color: lightgray !important;
+}
+
+.button {
+  background: none;
+  border: none;
+}
+
 .logo-container {
   padding: 30px;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .image {
   padding: 0 0.5px;
+}
+
+.color-hover:hover {
+  color: red;
 }
 
 .text-over-image-div {
@@ -31,6 +64,10 @@ a {
   opacity: 1;
 }
 
+.text-over-image-div:hover .colored-hover {
+  background-color: rgba(222, 104, 43, 0.7);
+}
+
 .text-over-image {
   background-color: rgba(87, 83, 84, 0.5);
   width: 100%;
@@ -49,6 +86,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.heading {
+  font-weight: 400;
 }
 
 .child-1 {
@@ -72,16 +113,36 @@ a {
 }
 
 footer {
-  font-size: x-small;
+  font-size: small;
 }
 
 @media (max-width: 767px) {
   .text-over-image span {
     font-size: 3rem;
   }
+
+  .navbar-container ul {
+    padding-right: 12px;
+  }
+
+  .navbar-container ul button {
+    padding: 1px 0;
+  }
 }
 
 @media (max-width: 576px) {
+  .dark-bg {
+    background-color: black;
+  }
+
+  .searchbar {
+    width: 100%;
+    margin: 0 24px;
+  }
+
+  .dark-bg div a {
+    color: white !important;
+  }
   .container-mobile {
     display: flex;
     flex-direction: column;
@@ -107,8 +168,8 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
-  .disappear-small {
-    display: none;
+@media (max-width: 365px) {
+  .navbar-container ul {
+    padding: 12px;
   }
 }
