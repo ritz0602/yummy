@@ -1,3 +1,8 @@
+.body-container {
+  max-width: 1440px;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,6 +67,10 @@ input::placeholder {
 
 .text-over-image-div:hover {
   opacity: 1;
+}
+
+.card-group {
+  padding: 0 12px;
 }
 
 .text-over-image-div:hover .colored-hover {

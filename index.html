@@ -13,27 +13,44 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="top">
-      <!-- Search Bar and User Signin/Signup -->
-      <nav class="navbar navbar-expand-sm">
-        <div class="navbar-container container-fluid">
-          <button
-            class="navbar-toggler hamburger-menu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="d-sm-none" href="#">
-            <img src="assets/logo.png" alt="logo" width="150" />
-          </a>
-          <!-- </div> -->
-          <div>
-            <form class="d-none d-sm-flex" role="search">
+    <div class="body-container container-fluid">
+      <section id="top">
+        <!-- Search Bar and User Signin/Signup -->
+        <nav class="navbar navbar-expand-sm">
+          <div class="navbar-container container-fluid">
+            <button
+              class="navbar-toggler hamburger-menu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="d-sm-none" href="#">
+              <img src="assets/logo.png" alt="logo" width="150" />
+            </a>
+            <!-- </div> -->
+            <div>
+              <form class="d-none d-sm-flex" role="search">
+                <input
+                  class="form-control search"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+            <ul class="nav justify-content-end">
+              <button class="button">Sign in</button>
+              <span style="color: lightgray; margin: 0 10px">|</span>
+              <button class="button">Sign up</button>
+            </ul>
+          </div>
+          <div class="searchbar">
+            <form class="d-sm-none" role="search">
               <input
                 class="form-control search"
                 type="search"
@@ -42,249 +59,235 @@
               />
             </form>
           </div>
-          <ul class="nav justify-content-end">
-            <button class="button">Sign in</button>
-            <span style="color: lightgray; margin: 0 10px">|</span>
-            <button class="button">Sign up</button>
-          </ul>
-        </div>
-        <div class="searchbar">
-          <form class="d-sm-none" role="search">
-            <input
-              class="form-control search"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
-        </div>
-      </nav>
-
-      <hr class="mt-0 mb-4" />
-
-      <!-- logo -->
-
-      <div class="logo-container container-fluid text-center d-none d-sm-block">
-        <img src="assets/logo.png" alt="logo" class="img-fluid logo" />
-      </div>
-
-      <!-- Nav Bar -->
-
-      <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-sm p-0 p-sm-2">
-          <div
-            class="collapse justify-content-center navbar-collapse dark-bg"
-            id="navbarNavAltMarkup"
-          >
-            <div class="fs-5 navbar-nav fw-bold">
-              <a class="m-2 color-hover nav-link" aria-current="page" href="#"
-                >Home</a
-              >
-              <a class="m-2 color-hover nav-link" href="#menus">Menus</a>
-              <a class="m-2 color-hover nav-link" href="#">About</a>
-              <a class="m-2 color-hover nav-link" href="#">Team</a>
-              <a class="m-2 color-hover nav-link" href="#">Contact</a>
-            </div>
-          </div>
         </nav>
-      </div>
-    </section>
 
-    <!-- Menu Items Card Group -->
-    <section id="menu-card-group">
-      <div class="card-group">
-        <div class="card image border-0">
-          <div class="position-relative">
-            <img
-              src="https://www.acouplecooks.com/wp-content/uploads/2022/07/Salmon-Nicoise-Salad-001.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image colored-hover">
-                <h3>SALAD</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card image border-0">
-          <div class="position-relative">
-            <img
-              src="https://www.acouplecooks.com/wp-content/uploads/2022/02/Salmon-Tacos-010.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image colored-hover">
-                <h3>TACOS</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card image border-0">
-          <div class="position-relative">
-            <img
-              src="https://www.acouplecooks.com/wp-content/uploads/2020/03/Soba-Noodles-016.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image colored-hover">
-                <h3>NOODLES</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card image border-0">
-          <div class="position-relative">
-            <img
-              src="https://www.acouplecooks.com/wp-content/uploads/2021/03/Salmon-Burger-003.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image colored-hover">
-                <h3>BURGER</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card image border-0">
-          <div class="position-relative">
-            <img
-              src="https://www.acouplecooks.com/wp-content/uploads/2022/11/Honey-Garlic-Salmon-012-1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="text-over-image-div opacity-zero">
-              <div class="text-over-image colored-hover">
-                <h3>SALMON</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <hr class="mt-0 mb-4" />
 
-    <!-- Menus -->
-    <section id="menus">
-      <div class="container-fluid mt-4">
-        <div class="row p-3 cont">
-          <div class="child-1 col-sm-12 col-md-8 col-lg-9">
-            <h4 class="heading mb-4">Newly Added Pizzas</h4>
-            <div class="custom-row container-mobile">
-              <div class="col-sm-3 col-md-3 col-lg-2">
-                <img
-                  class="menu-img"
-                  src="https://www.acouplecooks.com/wp-content/uploads/2019/04/Taco-Pizza-004.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-sm-9 col-lg-10">
-                <h5 class="heading">Best Oven Taco Pizza</h5>
-                <p>
-                  This really is the best taco pizza...ever. It's topped with
-                  refried beans, cheese, romaine, crumbled tortilla chips, and
-                  the icing on the cake, er pie — homemade ranch. In a word:
-                  WOW.
-                </p>
-                <a href="">Continue Reading ⟶</a>
-              </div>
-            </div>
-            <hr />
+        <!-- logo -->
 
-            <div class="custom-row container-mobile">
-              <div class="col-sm-3 col-md-3 col-lg-2">
-                <img
-                  class="menu-img"
-                  src="https://www.acouplecooks.com/wp-content/uploads/2020/05/Pan-Pizza-020.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-sm-9 col-lg-10">
-                <h5 class="heading">Perfect Pan Pizza</h5>
-                <p>
-                  Calling all lovers of thick, pillowy pizza crust! This epic
-                  homemade pan pizza tastes just like the thick crust pizza from
-                  your favorite pizzeria. The smell wafting from the oven is
-                  enough to make you visibly drool.
-                </p>
-                <a href="">Continue Reading ⟶</a>
-              </div>
-            </div>
-            <hr />
-            <div class="custom-row container-mobile">
-              <div class="col-sm-3 col-md-3 col-lg-2">
-                <img
-                  class="menu-img"
-                  src="https://www.acouplecooks.com/wp-content/uploads/2018/05/Loaded-Mexican-Pizza-023.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-sm-9 col-lg-10">
-                <h5 class="heading">Best Mexican Pizza</h5>
-                <p>
-                  Mexican pizza is the perfect recipe for when you can’t decide
-                  between Italian and Mexican! This pizza recipe features a
-                  sauce of creamy refried beans, Monterrey jack cheese, spicy
-                  jalapeños and red onion, and sweet corn.
-                </p>
-                <a href="">Continue Reading ⟶</a>
-              </div>
-            </div>
-          </div>
-          <div class="child-2 col-sm-12 col-md-4 col-lg-3">
-            <h4 class="heading quick-search">Quick Search</h4>
-            <div class="mb-4 position-relative">
-              <img
-                src="https://foodland.ca/wp-content/uploads/2020/12/Recipe_Eggs_SunnySide_Up_A.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="text-over-image-div">
-                <div class="text-over-image h-100">
-                  <span>Breakfast</span>
-                </div>
-              </div>
-            </div>
+        <div
+          class="logo-container container-fluid text-center d-none d-sm-block"
+        >
+          <img src="assets/logo.png" alt="logo" class="img-fluid logo" />
+        </div>
 
-            <div class="mb-4 position-relative">
-              <img
-                src="https://i.ndtvimg.com/i/2016-06/meal_625x350_41467178397.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="text-over-image-div">
-                <div class="text-over-image h-100">
-                  <span>Lunch</span>
-                </div>
+        <!-- Nav Bar -->
+
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-sm p-0 p-sm-2">
+            <div
+              class="collapse justify-content-center navbar-collapse dark-bg"
+              id="navbarNavAltMarkup"
+            >
+              <div class="fs-5 navbar-nav fw-bold">
+                <a class="m-2 color-hover nav-link" aria-current="page" href="#"
+                  >Home</a
+                >
+                <a class="m-2 color-hover nav-link" href="#menus">Menus</a>
+                <a class="m-2 color-hover nav-link" href="#">About</a>
+                <a class="m-2 color-hover nav-link" href="#">Team</a>
+                <a class="m-2 color-hover nav-link" href="#">Contact</a>
               </div>
             </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Menu Items Card Group -->
+      <section id="menu-card-group">
+        <div class="card-group">
+          <div class="card image border-0">
             <div class="position-relative">
               <img
-                src="https://c.ndtvimg.com/2022-03/jcliv9dg_shahi-paneer_625x300_15_March_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350"
-                class="card-img-top h-100"
+                src="https://www.acouplecooks.com/wp-content/uploads/2022/07/Salmon-Nicoise-Salad-001.jpg"
+                class="card-img-top"
                 alt="..."
               />
-              <div class="text-over-image-div">
-                <div class="text-over-image h-100">
-                  <span>Dinner</span>
+              <div class="text-over-image-div opacity-zero">
+                <div class="text-over-image colored-hover">
+                  <h3>SALAD</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card image border-0">
+            <div class="position-relative">
+              <img
+                src="https://www.acouplecooks.com/wp-content/uploads/2022/02/Salmon-Tacos-010.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-over-image-div opacity-zero">
+                <div class="text-over-image colored-hover">
+                  <h3>TACOS</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card image border-0">
+            <div class="position-relative">
+              <img
+                src="https://www.acouplecooks.com/wp-content/uploads/2020/03/Soba-Noodles-016.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-over-image-div opacity-zero">
+                <div class="text-over-image colored-hover">
+                  <h3>NOODLES</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card image border-0">
+            <div class="position-relative">
+              <img
+                src="https://www.acouplecooks.com/wp-content/uploads/2021/03/Salmon-Burger-003.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-over-image-div opacity-zero">
+                <div class="text-over-image colored-hover">
+                  <h3>BURGER</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card image border-0">
+            <div class="position-relative">
+              <img
+                src="https://www.acouplecooks.com/wp-content/uploads/2022/11/Honey-Garlic-Salmon-012-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-over-image-div opacity-zero">
+                <div class="text-over-image colored-hover">
+                  <h3>SALMON</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr />
+      <!-- Menus -->
+      <section id="menus">
+        <div class="container-fluid mt-4">
+          <div class="row p-3 cont">
+            <div class="child-1 col-sm-12 col-md-8 col-lg-9">
+              <h4 class="heading mb-4">Newly Added Pizzas</h4>
+              <div class="custom-row container-mobile">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img
+                    class="menu-img"
+                    src="https://www.acouplecooks.com/wp-content/uploads/2019/04/Taco-Pizza-004.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-9 col-lg-10">
+                  <h5 class="heading">Best Oven Taco Pizza</h5>
+                  <p>
+                    This really is the best taco pizza...ever. It's topped with
+                    refried beans, cheese, romaine, crumbled tortilla chips, and
+                    the icing on the cake, er pie — homemade ranch. In a word:
+                    WOW.
+                  </p>
+                  <a href="">Continue Reading ⟶</a>
+                </div>
+              </div>
+              <hr />
 
-    <!-- Footer -->
+              <div class="custom-row container-mobile">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img
+                    class="menu-img"
+                    src="https://www.acouplecooks.com/wp-content/uploads/2020/05/Pan-Pizza-020.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-9 col-lg-10">
+                  <h5 class="heading">Perfect Pan Pizza</h5>
+                  <p>
+                    Calling all lovers of thick, pillowy pizza crust! This epic
+                    homemade pan pizza tastes just like the thick crust pizza
+                    from your favorite pizzeria. The smell wafting from the oven
+                    is enough to make you visibly drool.
+                  </p>
+                  <a href="">Continue Reading ⟶</a>
+                </div>
+              </div>
+              <hr />
+              <div class="custom-row container-mobile">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img
+                    class="menu-img"
+                    src="https://www.acouplecooks.com/wp-content/uploads/2018/05/Loaded-Mexican-Pizza-023.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-9 col-lg-10">
+                  <h5 class="heading">Best Mexican Pizza</h5>
+                  <p>
+                    Mexican pizza is the perfect recipe for when you can’t
+                    decide between Italian and Mexican! This pizza recipe
+                    features a sauce of creamy refried beans, Monterrey jack
+                    cheese, spicy jalapeños and red onion, and sweet corn.
+                  </p>
+                  <a href="">Continue Reading ⟶</a>
+                </div>
+              </div>
+            </div>
+            <div class="child-2 col-sm-12 col-md-4 col-lg-3">
+              <h4 class="heading quick-search">Quick Search</h4>
+              <div class="mb-4 position-relative">
+                <img
+                  src="https://foodland.ca/wp-content/uploads/2020/12/Recipe_Eggs_SunnySide_Up_A.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="text-over-image-div">
+                  <div class="text-over-image h-100">
+                    <span>Breakfast</span>
+                  </div>
+                </div>
+              </div>
 
-    <footer class="text-center">
-      <p>Copyright © 2023 Yummy Crossing. All rights reserved.</p>
-    </footer>
+              <div class="mb-4 position-relative">
+                <img
+                  src="https://i.ndtvimg.com/i/2016-06/meal_625x350_41467178397.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="text-over-image-div">
+                  <div class="text-over-image h-100">
+                    <span>Lunch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img
+                  src="https://c.ndtvimg.com/2022-03/jcliv9dg_shahi-paneer_625x300_15_March_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
+                <div class="text-over-image-div">
+                  <div class="text-over-image h-100">
+                    <span>Dinner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <hr />
+
+      <!-- Footer -->
+
+      <footer class="text-center">
+        <p>Copyright © 2023 Yummy Crossing. All rights reserved.</p>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
